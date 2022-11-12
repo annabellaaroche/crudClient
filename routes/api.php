@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CilindroController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +38,5 @@ Route::group([
 
 ], function ($router) {
     Route::apiResource('client', ClientController::class);
+    Route::apiResource('cilindro', CilindroController::class);
 });
